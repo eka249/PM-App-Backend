@@ -17,17 +17,21 @@ ActiveRecord::Schema.define(version: 2019_11_06_074959) do
 
   create_table "roles", force: :cascade do |t|
     t.string "role"
+    t.boolean "adminYN"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tasks", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "manager_id"
+    t.integer "emp_id"
     t.string "client"
+    t.text "notes"
+    t.text "description"
     t.boolean "completed"
     t.date "start_date"
     t.date "end_date"
+    t.date "comp_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -44,6 +48,7 @@ ActiveRecord::Schema.define(version: 2019_11_06_074959) do
     t.string "first_name"
     t.string "last_name"
     t.string "unit"
+    t.string "role"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

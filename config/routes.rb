@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
-  devise_for :users
-  post 'user_token' => 'user_token#create'
-  post 'new' => 'user#create'
   resources :users
   resources :user_roles
-  resources :tasks
   resources :roles
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :tasks
+  post '/login', to: 'auth#create'
+  # ^^creating a valid token
+  get '/current_user', to: 'auth#show'
+  get '/alltasks', to: 'tasks#index'
+  post '/users', to: 'users#create'
+  post '/task', to: 'task#create'
+  get '/profile', to: 'users#profile'
+  patch 'users', to: 'users#update'
+  patch 'tasknotes', to: 'task#update'
 end

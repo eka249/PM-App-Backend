@@ -1,4 +1,6 @@
 class RolesController < ApplicationController
+
+  #we'll see how to do this
   before_action :set_role, only: [:show, :update, :destroy]
 
   # GET /roles
@@ -46,6 +48,6 @@ class RolesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def role_params
-      params.require(:role).permit(:role)
+      params.require(:role).permit(:role, :adminYN)
     end
 end

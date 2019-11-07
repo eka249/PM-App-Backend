@@ -1,59 +1,66 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user
-  before_action :set_user, only: [:show, :update, :destroy]
 
-  # GET /users
+  before_action :user_params, only: [:create]
+  skip_before_action :authorized, only: [:create]
+
   def index
-    @users = User.all
-
-    render json: @users
+      users = User.all
+      render json: users
   end
 
+  # def show
+  #     @user= User.find(user_params)
+  #     render json: user
+  # end
 
-  #https://dev.to/amckean12/user-authentication-for-a-rails-api-and-a-react-client-part-1-server-side-3fej
-  # GET /users/1
+  def profile
+      puts "hit profile in controller"
+      render json: {user: UserSerializer.new(current_user)}, status: :accepted
+  end
+
   def show
-    @user = User.find(params[:email])
-    if @user
-      render json: @user
-    else
-      @errors = @user.errors.full_messages
+      render json: {user: UserSerializer.new(current_user)}, status: :accepted
   end
-end
 
-  # POST /users
   def create
-    @user = User.new(user_params)
-
-    if @user.save
-      render json: @user, status: :created, location: @user
-    else
-      render json: @user.errors, status: :unprocessable_entity
-    end
+      # puts "reached create on backend"
+      # byebug
+      # @user = User.create(user_params)
+      @user = User.create(params[:user_params])
+      # byebug
+      if @user.valid?
+          @token = encode_token({user_id: @user.id})
+          render json: { user: UserSerializer.new(@user), jwt: @token }, status: :created
+          # puts "passed @user.valid? in users controller"
+      else
+          render json: {error: "failed to create user #{params[:email]}"}, status: :not_acceptable
+          # puts "passed @user.valid? and failed in users controller"
+      end
   end
 
-  # PATCH/PUT /users/1
   def update
-    if @user.update(user_params)
+      @user = User.find(params[:id])
+      @user.update(params[:user_params])
+      @user.save
       render json: @user
-    else
-      render json: @user.errors, status: :unprocessable_entity
-    end
+      # redirect_to @profile
   end
 
-  # DELETE /users/1
-  def destroy
-    @user.destroy
+  def delete
+      @user = User.find(params[:id])
+      @user.destroy()
+      
+      # redirect_to @profile
   end
+
+
+
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:email])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def user_params
-      params.require(:user).permit(:email, :first_name, :last_name, :unit, :password_digest)
-    end
+  def user_params
+      # params.require(:username,:name,:password)
+      params.require(:user).permit(:email,:first_name, :last_name, :role, :password, :unit)
+  end
 end
+

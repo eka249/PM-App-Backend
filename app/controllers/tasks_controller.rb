@@ -3,15 +3,14 @@ class TasksController < ApplicationController
 
   # GET /tasks
   def index
-    puts "hit tasks get"
     @tasks = Task.all
     render json: @tasks
   end
 
   # GET /tasks/1
   def show
-    @task = Task.find(params[:id])
-    render json: @tasks
+    @task = set_task
+    render json: @task
   end
 
   # POST /tasks
@@ -36,6 +35,7 @@ class TasksController < ApplicationController
 
   # DELETE /tasks/1
   def destroy
+    @task = set_task
     @task.destroy
   end
 
@@ -47,6 +47,6 @@ class TasksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def task_params
-      params.require(:task).permit(:user_id, :manager_id, :client, :completed, :start_date, :end_date)
+      params.require(:task).permit(:user_id, :emp_id, :client, :completed, :start_date, :end_date, :comp_date, :description , :notes)
     end
 end
