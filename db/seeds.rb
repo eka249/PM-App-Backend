@@ -13,9 +13,9 @@ Role.create(role: "admin", adminYN: 1)
 Role.create(role: "manager", adminYN: 0)
 Role.create(role: "emp", adminYN: 0)
 
-ellyn = User.create(email: "1@1.com", first_name: "ellyn test", last_name: "anderson test", unit: "idk", password_digest: "1234", role: "admin")
-asif = User.create(email: "2@2.com", first_name: "asif test", last_name: "idk his last name test", unit: "dope one", password_digest: "1234", role: "manager")
-joseph = User.create(email: "3@3.com", first_name: "j test", last_name: "idk his last name test2", unit: "closest to admin", password_digest: "1234", role: "emp")
+ellyn = User.create(email: "1@1.com", first_name: "ellyn test", last_name: "anderson test", unit: "idk", password: "1234", role: "admin")
+asif = User.create(email: "2@2.com", first_name: "asif test", last_name: "idk his last name test", unit: "dope one", password: "1234", role: "manager")
+joseph = User.create(email: "3@3.com", first_name: "j test", last_name: "idk his last name test2", unit: "closest to admin", password: "1234", role: "emp")
 
 
 Task.create(user_id: 1, emp_id: 2, client: "a client", completed: 0, start_date: "2019-12-1", end_date: "2019-12-2", comp_date: "2019-12-30", description: "test", notes: "")
