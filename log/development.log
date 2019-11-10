@@ -5399,3 +5399,499 @@ Processing by AuthController#create as JSON
 Completed 202 Accepted in 227ms (Views: 0.5ms | ActiveRecord: 0.5ms)
 
 
+Started POST "/login" for ::1 at 2019-11-08 09:27:40 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ellyn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.28ms)
+Completed 202 Accepted in 259ms (Views: 6.4ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:31:20 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:33:41 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 225ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:34:45 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:41:23 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 225ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:42:06 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 232ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:43:09 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 401 Unauthorized in 229ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:44:10 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:44:22 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 202 Accepted in 228ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:45:19 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.88ms)
+Completed 202 Accepted in 232ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:46:27 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 231ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:46:27 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 232ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:46:28 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.53ms)
+Completed 202 Accepted in 227ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:46:32 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 202 Accepted in 232ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:46:37 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 229ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:47:07 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 202 Accepted in 230ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:48:41 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.22ms)
+Completed 202 Accepted in 250ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:56:00 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 228ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:56:57 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:57:07 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 235ms (Views: 0.5ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 09:59:30 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 241ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:05:34 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:06:35 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 202 Accepted in 232ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:07:05 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:09:23 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 238ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:10:00 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 233ms (Views: 0.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:10:22 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:11:02 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 202 Accepted in 224ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:11:27 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 229ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:11:27 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 240ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-08 10:18:04 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 229ms (Views: 4.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-08 12:39:52 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-08 12:39:55 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-08 12:40:10 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-09 20:07:40 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.39ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-09 23:02:31 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-09 23:04:36 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-09 23:04:46 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-09 23:05:07 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:12:24 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ellyn/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.3ms)
+Completed 202 Accepted in 277ms (Views: 6.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/manager" for ::1 at 2019-11-09 23:18:05 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/manager"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-11-09 23:19:01 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ellyn/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ellyn/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:19:14 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"1@1.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 225ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:20:37 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 202 Accepted in 225ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for ::1 at 2019-11-09 23:20:38 -0800
+Processing by TasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:22:15 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 202 Accepted in 235ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:22:56 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 229ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:23:17 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 225ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:29:04 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 226ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:30:46 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 225ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:31:41 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 242ms (Views: 0.5ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:31:57 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 202 Accepted in 247ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:34:09 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 202 Accepted in 225ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:34:34 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 202 Accepted in 226ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for ::1 at 2019-11-09 23:34:58 -0800
+Processing by AuthController#create as JSON
+  Parameters: {"email"=>"2@2.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 224ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
