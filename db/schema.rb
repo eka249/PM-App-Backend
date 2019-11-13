@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_11_06_074959) do
   create_table "tasks", force: :cascade do |t|
     t.integer "user_id"
     t.integer "emp_id"
+    t.string "title"
     t.string "client"
     t.text "notes"
     t.text "description"

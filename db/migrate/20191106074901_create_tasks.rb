@@ -3,6 +3,7 @@ class CreateTasks < ActiveRecord::Migration[5.2]
     create_table :tasks do |t|
       t.integer :user_id
       t.integer :emp_id
+      t.string :title
       t.string :client
       t.text :notes
       t.text :description
