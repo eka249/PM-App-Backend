@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # resources :roles
   resources :tokens, only: [:create]
   resources :tasks
-  resources :users
+  # resources :users
   patch :tasks, to: 'tasks#update'
   # post '/login', to: 'tokens#create'
   # ^^creating a valid token
@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   # patch 'tasknotes', to: 'task#update'
   #^need an id
   get '/employees/:id', to: 'roles#employees'
+  get '/users/:id', to: 'users#show'
   # resource :role do 
   #   get 'employees', :on => :collection
   # end
