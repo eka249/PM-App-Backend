@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :user_roles
   # resources :roles
   resources :tasks
-  # resources :users
+  resources :users
   patch :tasks, to: 'tasks#update'
   post '/login', to: 'auth#create'
   # ^^creating a valid token

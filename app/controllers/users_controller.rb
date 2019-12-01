@@ -37,14 +37,15 @@ class UsersController < ApplicationController
       puts "reached create on backend"
       puts "password"
       puts params[:password]
-      # byebug
       # @user = User.create(user_params)
-      @user = User.create(params[user_params])
+      @user = User.create(user_params)
       # byebug
       if @user.valid?
+        puts "was valid"
           @token = encode_token({user_id: @user.id})
           render json: { user: UserSerializer.new(@user), jwt: @token }, status: :created
       else
+        puts "wasn't valid"
           render json: {error: "failed to create user #{params[:email]}"}, status: :not_acceptable
           # puts "passed @user.valid? and failed in users controller"
       end

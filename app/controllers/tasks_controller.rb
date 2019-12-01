@@ -9,7 +9,8 @@ class TasksController < ApplicationController
 
   # GET /tasks/1
   def show
-    @task = set_task
+    # NEED NEED NEED employee first, last_name, email
+    @task = Task.find(params[:id])
     render json: @task
   end
 
@@ -25,7 +26,7 @@ class TasksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /tasks/1
+  # PATCH/PUT
   def update
     @task = Task.find(params[:id])
     puts"hit update task"
@@ -33,19 +34,14 @@ class TasksController < ApplicationController
       render json: @task
   end
 
-  # DELETE /tasks/1
+  # DELETE
   def destroy
-    @task = set_task
+    @task = Task.find(params[:id])
     @task.destroy
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_task
-      @task = Task.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
     def task_params
       params.require(:task).permit(:user_id, :emp_id, :client, :completed, :start_date, :end_date, :description, :notes, :title)
     end
