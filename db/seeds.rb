@@ -17,9 +17,9 @@ ellyn = User.create(email: "1@1.com", first_name: "ellyn test", last_name: "ande
 asif = User.create(email: "2@2.com", first_name: "asif test", last_name: "idk his last name test", unit: "mod5", password: "1234", role: "manager")
 joseph = User.create(email: "3@3.com", first_name: "j test", last_name: "idk his last name test2", unit: "closest to admin", password: "1234", role: "emp")
 jared = User.create(email: "4@4.com", first_name: "Jared", last_name: "idk his last name test3", unit: "mod5", password: "1234", role: "emp")
-brittan = User.create(email: "4@4.com", first_name: "Brittan", last_name: "Fairchild", unit: "mod5", password: "1234", role: "emp")
-katana = User.create(email: "4@4.com", first_name: "Katana", last_name: "crap idk", unit: "mod5", password: "1234", role: "emp")
-matt = User.create(email: "4@4.com", first_name: "Matt", last_name: "why don't i know anyones last name", unit: "mod5", password: "1234", role: "emp")
+brittan = User.create(email: "5@5.com", first_name: "Brittan", last_name: "Fairchild", unit: "mod5", password: "1234", role: "emp")
+katana = User.create(email: "6@6.com", first_name: "Katana", last_name: "crap idk", unit: "mod5", password: "1234", role: "emp")
+matt = User.create(email: "7@7.com", first_name: "Matt", last_name: "why don't i know anyones last name", unit: "mod5", password: "1234", role: "emp")
 
 
 Task.create(user_id: 1, emp_id: 2, client: "a client", title: "the task right now is abcd please do it because I said so", completed: 0, start_date: "2019-12-1", end_date: "2019-12-2", comp_date: "2019-12-30", description: "test", notes: "")

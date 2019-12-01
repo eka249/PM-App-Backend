@@ -12,7 +12,6 @@ class RolesController < ApplicationController
   end
 
   def employees
-
     @users = User.all
     @user = User.find(params[:id])
 

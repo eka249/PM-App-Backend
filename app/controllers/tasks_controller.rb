@@ -15,6 +15,7 @@ class TasksController < ApplicationController
 
   # POST /tasks
   def create
+    puts "hit add new task"
     @task = Task.new(task_params)
 
     if @task.save
@@ -27,13 +28,9 @@ class TasksController < ApplicationController
   # PATCH/PUT /tasks/1
   def update
     @task = Task.find(params[:id])
-    puts" params[:completed]"
-    puts params[:completed]
-    if @task.update_attributes(task_params)
+    puts"hit update task"
+    @task.update(task_params)
       render json: @task
-    else
-      render json: @task.errors, status: :unprocessable_entity
-    end
   end
 
   # DELETE /tasks/1
@@ -50,6 +47,6 @@ class TasksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def task_params
-      params.require(:task).permit(:user_id, :emp_id, :client, :completed, :start_date, :end_date, :comp_date, :description , :notes, :title)
+      params.require(:task).permit(:user_id, :emp_id, :client, :completed, :start_date, :end_date, :description, :notes, :title)
     end
 end
