@@ -14,7 +14,6 @@ class UsersController < ApplicationController
   end
 
   def profile
-      
       render json: {user: UserSerializer.new(current_user)}, status: :accepted
   end
 
@@ -34,11 +33,13 @@ class UsersController < ApplicationController
 #    end
 #  end
   def create
-      puts "reached create on backend"
-      puts "password"
-      puts params[:password]
-      # @user = User.create(user_params)
-      @user = User.create(user_params)
+      puts "all params"
+      puts params
+      @user = User.create(first_name: params[:first_name], last_name: params[:last_name], password: params[:password], email: params[:email], unit: params[:unit])
+    #   (user_params)
+      puts "params after creating @user"
+      puts params
+      @user.errors.full_messages
       # byebug
       if @user.valid?
         puts "was valid"
@@ -47,7 +48,6 @@ class UsersController < ApplicationController
       else
         puts "wasn't valid"
           render json: {error: "failed to create user #{params[:email]}"}, status: :not_acceptable
-          # puts "passed @user.valid? and failed in users controller"
       end
   end
 
@@ -60,7 +60,8 @@ class UsersController < ApplicationController
 
   def delete
       @user = User.find(params[:id])
-      @user.destroy()  end
+      @user.destroy()
+    end
 
 
 
@@ -68,8 +69,9 @@ class UsersController < ApplicationController
   private
 
   def user_params
-
-      params.require(:user).permit(:email, :first_name, :last_name, :role, :password, :unit)
+      params.require(:user).permit(:email, :first_name, :last_name, 
+        # :role,
+         :password, :unit)
   end
 end
 
