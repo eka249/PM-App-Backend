@@ -14,6 +14,12 @@ class TasksController < ApplicationController
     render json: @task
   end
 
+    # GET /tasks/archive
+    def show
+      @tasks = Task.find(params[:id])
+      render json: @task
+    end
+
   # POST /tasks
   def create
     puts "hit add new task"
