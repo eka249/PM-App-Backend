@@ -1,11 +1,16 @@
 class CreateTasks < ActiveRecord::Migration[5.2]
   def change
     create_table :tasks do |t|
-      t.string :assigned_to
-      t.string :assigned_by
+      t.integer :user_id
+      t.integer :emp_id
+      t.string :title
       t.string :client
+      t.text :notes
+      t.text :description
+      t.boolean :completed
       t.date :start_date
       t.date :end_date
+      t.date :comp_date
 
       t.timestamps
     end

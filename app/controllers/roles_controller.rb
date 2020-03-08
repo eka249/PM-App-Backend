@@ -1,6 +1,9 @@
 class RolesController < ApplicationController
-  before_action :set_role, only: [:show, :update, :destroy]
 
+  #we'll see how to do this
+  # before_action :set_role, only: [:show, :update, :destroy]
+
+  
   # GET /roles
   def index
     @roles = Role.all
@@ -8,8 +11,18 @@ class RolesController < ApplicationController
     render json: @roles
   end
 
+  def employees
+
+    @users = User.all
+    @user = User.find(params[:id])
+
+    @users= @users.select{|employee| (employee.role == "emp" && employee.unit == @user.unit)}
+      render json: @users
+    end
+
   # GET /roles/1
   def show
+    puts "hit show in roles c"
     render json: @role
   end
 
@@ -46,6 +59,6 @@ class RolesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def role_params
-      params.require(:role).permit(:role)
+      params.require(:role).permit(:role, :adminYN)
     end
 end
